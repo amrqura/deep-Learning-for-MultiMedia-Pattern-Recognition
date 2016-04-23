@@ -26,7 +26,7 @@ def build_train_set():
     y_data=np.zeros(80)
     for step in range(20):
         print "creating samples "+str(step)
-    # enerate number between -0.3 and 0.3
+    # generate noise:  number between -0.03 and 0.03
         r=np.float32(random.uniform(-0.03, 0.03))
         x1=[-2+r,1+r]
         y1=-1

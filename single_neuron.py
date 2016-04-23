@@ -92,7 +92,7 @@ def build_test_set():
 
 def main():
     # start with creating the variables
-    W = tf.Variable(tf.zeros([2, 1]))
+    W = tf.Variable(tf.random_uniform([2, 1], -1.0, 1.0))
     b = tf.Variable(tf.zeros([1]))
     #placeholders
     X=tf.placeholder(tf.float32,shape=(None,2))
@@ -133,7 +133,7 @@ def main():
        this can show that the (+) values will get bigger values > 6 for example , while the nigative get smaller values
     
     '''
-    sess.run(y,feed_dict={X:test_data})
+    print (sess.run(y,feed_dict={X:test_data}))
     
     
 if __name__ == '__main__':

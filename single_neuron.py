@@ -132,7 +132,7 @@ def main():
        [  9.99880791e-01],
        [  1.59412483e-03]], dtype=float32)
        
-       this can show that the (+) values will get bigger values > 6 for example , while the nigative get smaller values
+       this can show that the (+) values will get bigger values > 0.6 for example , while the negative get smaller values
     
     '''
     print (sess.run(y,feed_dict={X:test_data}))

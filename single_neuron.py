@@ -90,6 +90,8 @@ def build_test_set():
     
     return x_data.astype(np.float32),y_data.astype(np.float32)
 
+
+
 def main():
     # start with creating the variables
     W = tf.Variable(tf.random_uniform([2, 1], -1.0, 1.0))

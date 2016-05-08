@@ -74,7 +74,7 @@ def build_deep_neural_network(input_size,output_size,hidden_layer_sizes,hidden_l
 def main():
     input_size=18
     output_size=9
-    hidden_layer_sizes=[36,40]
+    hidden_layer_sizes=[36,400]
     #hidden_layer_sizes=np.array(hidden_layer_sizes.strip(']').strip('[').split(','))
     #hidden_layer_sizes=hidden_layer_sizes.astype(np.float32)
     hidden_layer_activation=tf.nn.relu
